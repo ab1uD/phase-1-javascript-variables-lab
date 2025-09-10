@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 3,
+    "pending": 0,
+    "failures": 3,
+    "start": "2025-09-10T14:35:07.506Z",
+    "end": "2025-09-10T14:35:08.103Z",
+    "duration": 597
+  },
+  "tests": [
+    {
+      "title": "is set as Scuber",
+      "fullTitle": "index.js companyName is set as Scuber",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is defined as a const",
+      "fullTitle": "index.js companyName is defined as a const",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is declared as equal to Chelsea",
+      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: mostProfitableNeighborhood is not defined\n    at Context.<anonymous> (test/indexTest.js:21:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "mostProfitableNeighborhood is not defined"
+      }
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\n\\n\\n // Declare the companyName using const\\nconst companyName = \\'Scuber\\';\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n  it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n     it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n    // Define mostProfitableNeighborhood using let\\n    \\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\');\\n it(\\'is defined using let\\', function () {\\n    expect(js).to.match(\\n      \"Expected mostProfitableNeighborhood to be defined using let\")\\n   });\\n   describe(\\'mostProfitableNeighborhood\\', function () {\\n  it(\\'is declared as equal to Chelsea\\', function () {\\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\')});\\n  });\\n\\n\\nlet companyCeo = \\'Susan Smith\\';\\n  describe(\\'companyCeo\\', function () {\\n  it(\\'is declared as equal to Susan Smith\\', function () {\\n    expect(companyCeo).to.equal(\\'Susan Smith\\');\\n  })});\\n  it(\\'is defined using let\\', function () {\\n    expect(js).to.match(/let companyCeo/, \"Expected companyCeo to be defined using let\");\\n  });' to match /let mostProfitableNeighborhood/",
+        "showDiff": false,
+        "actual": "// Code your solution in this file!\n\n\n // Declare the companyName using const\nconst companyName = 'Scuber';\n  it('is set as Scuber', function () {\n      expect(companyName).to.equal('Scuber');\n    });\n  it('is defined as a const', function () {\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\n    });\n\n  it('is set as Scuber', function () {\n      expect(companyName).to.equal('Scuber');\n    });\n     it('is defined as a const', function () {\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\n    });\n\n    // Define mostProfitableNeighborhood using let\n    \n    expect(mostProfitableNeighborhood).to.equal('Chelsea');\n it('is defined using let', function () {\n    expect(js).to.match(\n      \"Expected mostProfitableNeighborhood to be defined using let\")\n   });\n   describe('mostProfitableNeighborhood', function () {\n  it('is declared as equal to Chelsea', function () {\n    expect(mostProfitableNeighborhood).to.equal('Chelsea')});\n  });\n\n\nlet companyCeo = 'Susan Smith';\n  describe('companyCeo', function () {\n  it('is declared as equal to Susan Smith', function () {\n    expect(companyCeo).to.equal('Susan Smith');\n  })});\n  it('is defined using let', function () {\n    expect(js).to.match(/let companyCeo/, \"Expected companyCeo to be defined using let\");\n  });",
+        "stack": "AssertionError: Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\n\\n\\n // Declare the companyName using const\\nconst companyName = \\'Scuber\\';\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n  it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n     it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n    // Define mostProfitableNeighborhood using let\\n    \\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\');\\n it(\\'is defined using let\\', function () {\\n    expect(js).to.match(\\n      \"Expected mostProfitableNeighborhood to be defined using let\")\\n   });\\n   describe(\\'mostProfitableNeighborhood\\', function () {\\n  it(\\'is declared as equal to Chelsea\\', function () {\\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\')});\\n  });\\n\\n\\nlet companyCeo = \\'Susan Smith\\';\\n  describe(\\'companyCeo\\', function () {\\n  it(\\'is declared as equal to Susan Smith\\', function () {\\n    expect(companyCeo).to.equal(\\'Susan Smith\\');\\n  })});\\n  it(\\'is defined using let\\', function () {\\n    expect(js).to.match(/let companyCeo/, \"Expected companyCeo to be defined using let\");\\n  });' to match /let mostProfitableNeighborhood/\n    at Context.<anonymous> (test/indexTest.js:25:21)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is declared as equal to Susan Smith",
+      "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: companyCeo is not defined\n    at Context.<anonymous> (test/indexTest.js:31:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "companyCeo is not defined"
+      }
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js companyCeo is defined using let",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "is declared as equal to Chelsea",
+      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: mostProfitableNeighborhood is not defined\n    at Context.<anonymous> (test/indexTest.js:21:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "mostProfitableNeighborhood is not defined"
+      }
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\n\\n\\n // Declare the companyName using const\\nconst companyName = \\'Scuber\\';\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n  it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n     it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n    // Define mostProfitableNeighborhood using let\\n    \\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\');\\n it(\\'is defined using let\\', function () {\\n    expect(js).to.match(\\n      \"Expected mostProfitableNeighborhood to be defined using let\")\\n   });\\n   describe(\\'mostProfitableNeighborhood\\', function () {\\n  it(\\'is declared as equal to Chelsea\\', function () {\\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\')});\\n  });\\n\\n\\nlet companyCeo = \\'Susan Smith\\';\\n  describe(\\'companyCeo\\', function () {\\n  it(\\'is declared as equal to Susan Smith\\', function () {\\n    expect(companyCeo).to.equal(\\'Susan Smith\\');\\n  })});\\n  it(\\'is defined using let\\', function () {\\n    expect(js).to.match(/let companyCeo/, \"Expected companyCeo to be defined using let\");\\n  });' to match /let mostProfitableNeighborhood/",
+        "showDiff": false,
+        "actual": "// Code your solution in this file!\n\n\n // Declare the companyName using const\nconst companyName = 'Scuber';\n  it('is set as Scuber', function () {\n      expect(companyName).to.equal('Scuber');\n    });\n  it('is defined as a const', function () {\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\n    });\n\n  it('is set as Scuber', function () {\n      expect(companyName).to.equal('Scuber');\n    });\n     it('is defined as a const', function () {\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\n    });\n\n    // Define mostProfitableNeighborhood using let\n    \n    expect(mostProfitableNeighborhood).to.equal('Chelsea');\n it('is defined using let', function () {\n    expect(js).to.match(\n      \"Expected mostProfitableNeighborhood to be defined using let\")\n   });\n   describe('mostProfitableNeighborhood', function () {\n  it('is declared as equal to Chelsea', function () {\n    expect(mostProfitableNeighborhood).to.equal('Chelsea')});\n  });\n\n\nlet companyCeo = 'Susan Smith';\n  describe('companyCeo', function () {\n  it('is declared as equal to Susan Smith', function () {\n    expect(companyCeo).to.equal('Susan Smith');\n  })});\n  it('is defined using let', function () {\n    expect(js).to.match(/let companyCeo/, \"Expected companyCeo to be defined using let\");\n  });",
+        "stack": "AssertionError: Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\n\\n\\n // Declare the companyName using const\\nconst companyName = \\'Scuber\\';\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n  it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n  it(\\'is set as Scuber\\', function () {\\n      expect(companyName).to.equal(\\'Scuber\\');\\n    });\\n     it(\\'is defined as a const\\', function () {\\n      expect(js).to.match(/const companyName/, \"Expected companyName to be a const\");\\n    });\\n\\n    // Define mostProfitableNeighborhood using let\\n    \\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\');\\n it(\\'is defined using let\\', function () {\\n    expect(js).to.match(\\n      \"Expected mostProfitableNeighborhood to be defined using let\")\\n   });\\n   describe(\\'mostProfitableNeighborhood\\', function () {\\n  it(\\'is declared as equal to Chelsea\\', function () {\\n    expect(mostProfitableNeighborhood).to.equal(\\'Chelsea\\')});\\n  });\\n\\n\\nlet companyCeo = \\'Susan Smith\\';\\n  describe(\\'companyCeo\\', function () {\\n  it(\\'is declared as equal to Susan Smith\\', function () {\\n    expect(companyCeo).to.equal(\\'Susan Smith\\');\\n  })});\\n  it(\\'is defined using let\\', function () {\\n    expect(js).to.match(/let companyCeo/, \"Expected companyCeo to be defined using let\");\\n  });' to match /let mostProfitableNeighborhood/\n    at Context.<anonymous> (test/indexTest.js:25:21)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is declared as equal to Susan Smith",
+      "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: companyCeo is not defined\n    at Context.<anonymous> (test/indexTest.js:31:14)\n    at process.processImmediate (node:internal/timers:485:21)",
+        "message": "companyCeo is not defined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "is set as Scuber",
+      "fullTitle": "index.js companyName is set as Scuber",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is defined as a const",
+      "fullTitle": "index.js companyName is defined as a const",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js companyCeo is defined using let",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
